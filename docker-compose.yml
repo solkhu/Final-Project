@@ -1,7 +1,7 @@
 services:
   mongo:
     image: mongo:8
-    container_name: lab-mongo
+    container_name: ing-mongo
     restart: unless-stopped
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
