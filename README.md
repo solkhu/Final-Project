@@ -10,7 +10,7 @@
 4. Removed trailing whitespaces from column names
 5. Standardized categorical values and replaced unclear "missing values" for actual nulls
 6. Converted categorical columns like `Age, Glucose, Insulin` and `Body Mass Index` to numerical
-7. Replaced numerical and categorical missing values with the median and `unknown` respectively
+7. Checked prportion of missing values for numerical and categorical columns
 8. Dropped duplicated rows
 9. Verified if numerical outliers exist
 10. Exported cleaned dataframe as csv
@@ -31,10 +31,11 @@
 3. Loaded collection as dataframe
 4. Showed descriptive statistics
 5. Standardized outliers in `Age` column (expected values are between 21 and 81)
-6. Replaced negative values in numerical columns with the median
-7. Replaced `unknown` value in categorical columns with null, then with the mode
-8. Changed `routine` value rows in `Care Path` column to `routine follow-up`, following the dataset dictionary
-9. Standardized `Patient Segment` values (`Adult, Senior`) based on `Age` column
+6. Removed outlier in `Glucose` column then checked outliers in remaining columns
+7. Replaced negative values in numerical columns with the median
+8. Replaced missing values in categorical columns with the mode
+9. Changed `routine` value rows in `Care Path` column to `routine follow-up`, following the dataset dictionary
+10. Standardized `Patient Segment` values (`Adult, Senior`) based on `Age` column
 
 ## Files
 
